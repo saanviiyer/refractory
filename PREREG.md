@@ -24,7 +24,7 @@ read from `used_coordinates/runs/arm_torus_search_v6.json`:
 And on the bounded arm (`v7`), from `INSTRUMENT.md`: rotation 8/8 on the
 wrapping parity arm, translation 8/8 on the bounded one.
 
-## G0 --- instrument calibration. RUN, PASSED.
+## G0: instrument calibration. RUN, PASSED.
 
 The gate must reproduce the parent's known verdicts before its verdict on a new
 architecture means anything: conv GRU PASS on `v6` and `v7`, RSSM FAIL on both.
@@ -32,7 +32,7 @@ architecture means anything: conv GRU PASS on `v6` and `v7`, RSSM FAIL on both.
 Result, `runs/gate_calibration.json`, 31 August 2026: 4/4 agreeing, `calibrated`
 true. Median ratios 0.653 / 0.301 (GRU, pass) and 2.122 / 1.578 (RSSM, fail).
 
-## G1 --- validity gate. Runs before any analysis, on every cell.
+## G1: validity gate. Runs before any analysis, on every cell.
 
 For each cell (model in {`snn`, `rate`, `snn_wide`, `rate_wide`}, variant in
 {`v6`, `v7`}), `gate_blackout.py` compares blackout prediction against frame
@@ -50,7 +50,7 @@ persistence on eight dark-condition seeds.
 checkpoint and raise rather than warn. `tests/test_gate.py` asserts that
 ordering by inspecting their source.
 
-## H1 --- does the criterion transfer to a spiking core?
+## H1: does the criterion transfer to a spiking core?
 
 Cell: `snn`, `v6`, dark, `mode=search`, primary view `r` (the state the decoder
 reads, and so the analogue of the GRU hidden vector), eight seeds.
@@ -75,13 +75,13 @@ debugging note. The parent's limitation stands and this project says so.
 Between the two: report the numbers, claim neither. Declared here so it cannot
 be resolved after the fact.
 
-## H2 --- is the verdict a property of the model or of the chosen state variable?
+## H2: is the verdict a property of the model or of the chosen state variable?
 
 This is the project's own claim. Same cell as H1, all five views
 (`v`, `i`, `r`, `s`, `all`).
 
 Primary statistic, per view: `agree(view)` = the number of (seed, plane) pairs
-out of 16 --- 8 seeds x 2 planes --- on which that view's `best_basis` **and** its
+out of 16 (8 seeds x 2 planes) on which that view's `best_basis` **and** its
 `beats_null` both match the primary view `r`. Computed by
 `make_numbers.agreement_macros`.
 
@@ -98,7 +98,7 @@ out of 16 --- 8 seeds x 2 planes --- on which that view's `best_basis` **and** i
   claim neither H2a nor H2b, and say in the write-up that the arm was
   inconclusive.
 
-## H3 --- is any of it about spiking?
+## H3: is any of it about spiking?
 
 The rate twin shares the four-component state, the parameter count, the
 initialisation and the gradient form, and differs only in that its emission is
@@ -108,10 +108,10 @@ A spiking-specific claim requires, for the view in question,
 `agree_snn(view) - agree_rate(view)` to differ by more than 4/16 in the
 direction claimed. Below that, the finding is reported as a property of
 multi-component recurrent state, which is the honest description and still a
-finding --- it would mean the criterion's under-specification has nothing to do
+finding. It would mean the criterion's under-specification has nothing to do
 with spikes and applies to any model whose state is not one vector.
 
-## H4 --- the family detector on bounded joints
+## H4: the family detector on bounded joints
 
 Cell: `snn`, `v7`, dark, primary view `r`, eight seeds. The parent's GRU says
 translation 8/8 on both joints.
@@ -168,7 +168,7 @@ Listed before any model was trained, in the parent's format.
 
 ## Amendments
 
-### A1 --- a graded control. 31 August 2026, written before the run.
+### A1: a graded control. 31 August 2026, written before the run.
 
 **What prompted it.** H3's rate twin was built to isolate discreteness, and the
 v6 pilot showed it does not do that cleanly. Only 23.8% of its emitted values
@@ -180,7 +180,7 @@ not established.
 
 **What is added.** A third model kind, `rate_soft`: the same architecture,
 parameter count and initialisation, with the emission `sigmoid(w_e * margin)`
-at `w_e = 0.25` and **exact autograd through that sigmoid** --- no surrogate.
+at `w_e = 0.25` and **exact autograd through that sigmoid**, with no surrogate.
 
 **What it therefore tests, stated plainly.** `rate_soft` removes three things at
 once relative to `snn`: the discrete forward, the surrogate/forward mismatch,
@@ -202,10 +202,10 @@ saturated the way the first twin did, its result is reported as another
 partially-saturated model, and it does not license the separation above.
 
 **What it does not do.** It does not replace the original twin. `gateRateV6*`
-and the H3 section of `FINDINGS.md` stand exactly as recorded whatever
+and the H3 section of `FINDINGS.md` stand as recorded whatever
 `rate_soft` returns. No parameter of `snn` or `rate` is changed.
 
-### A2 --- `v7` proceeds despite the `v6` gate failure. 31 August 2026.
+### A2: `v7` proceeds despite the `v6` gate failure. 31 August 2026.
 
 `PLAN.md` already sequences S5 as not blocked on S4, so this records rather than
 changes the decision. The `v6` cells failed the gate, and `v7` is run anyway
@@ -213,11 +213,10 @@ because a failure confined to one environment and a failure across both are
 different results, and the second is only available by running it. `v7` is
 judged against the same G1 bands, with H4 downstream of its own gate.
 
-### A3 --- H4 needs a quality floor. 31 August 2026, mid-run, partial peek disclosed.
+### A3: H4 needs a quality floor. 31 August 2026, mid-run, partial peek disclosed.
 
 **Disclosure first.** This is written after seeing 2 of 8 checkpoints per cell
-in the running H4 analysis --- a structural check that the fits were well-formed
---- and before any cell completed. What those two showed: winning residuals in
+in the running H4 analysis (a structural check that the fits were well-formed) and before any cell completed. What those two showed: winning residuals in
 the range 0.42 to 0.99, and several family verdicts decided by margins of about
 0.05 between two families that both fit badly. No per-seed verdict is used
 below and the amendment is anchored to a band this file already contains.
@@ -226,8 +225,8 @@ below and the amendment is anchored to a band this file already contains.
 >= 7/8 seeds. It says nothing about whether the winning family *fits*. A
 residual near 1.0 means the fitted transform is no better than applying no
 transform, so a model could satisfy H4 by coin-flipping between two families
-that both explain nothing. H2b already guards against this --- "a view that finds
-nothing at all disagrees trivially and is not evidence of anything" --- and H4
+that both explain nothing. H2b already guards against this ("a view that finds
+nothing at all disagrees trivially and is not evidence of anything") and H4
 was written without the equivalent.
 
 **The floor, anchored not invented.** H4 additionally requires the winning
@@ -244,7 +243,7 @@ worst winning residual on this instrument (0.360, rotation on the bounded arm,
 
 **Note added 31 August 2026, after A5.** The floor does **not** separate a
 trained model from an untrained one. In the A5 control, 8 of 10 (view, joint)
-fits on a randomly initialised `rate` model clear it, one of them at 0.2946 ---
+fits on a randomly initialised `rate` model clear it, one of them at 0.2946,
 a better fit than the same view achieves after training. The floor is a check
 that a fitted transform beats doing nothing; it is **not** evidence that the
 criterion found a learned coordinate, and must not be quoted as if it were.
@@ -258,7 +257,7 @@ between coin flips and licenses nothing in either direction. Any view
 comparison on a cell that fails the floor is reported as uninformative
 regardless of where the count lands.
 
-### A4 --- confirmatory test of view-dependence. 31 August 2026, before any fresh model was trained.
+### A4: confirmatory test of view-dependence. 31 August 2026, before any fresh model was trained.
 
 **What is being confirmed.** H4's post-hoc observation: on `v7`, two
 128-dimensional components of the same frozen state, each clearing the A3
@@ -299,7 +298,7 @@ new observation, not a confirmation, and is recorded as such if it occurs.
 **Secondary predictions**, reported whatever the primary does:
 
 - **P1:** `s` returns translation on >= 7/8 seeds on **both** joints, in both
-  cells --- the discovery run gave 32/32 across cells.
+  cells. The discovery run gave 32/32 across cells.
 - **P2:** the primary view `r` does **not** clear the A3 floor, in either cell.
   The claim that the state the decoder reads is the wrong place to point the
   criterion depends on this, and it is the prediction most likely to fail.
@@ -310,14 +309,14 @@ analysed only under `--allow-partial`, recorded in the JSON. The discovery run
 had `snn` PASS 8/8 and `rate` PARTIAL 7/8; there is no expectation that the
 fresh seeds reproduce those verdicts, and the verdicts are reported as they come.
 
-**What this test cannot do.** It cannot say the effect is about spiking --- the
+**What this test cannot do.** It cannot say the effect is about spiking. The
 discovery comparison was in the rate twin, and H3 already fixes that reading. It
 cannot separate a dynamical explanation from a representational one: `s` is
 bounded to [0,1] and non-negative, and a translation family may fit such a code
 better for reasons of what it can represent. That confound is untouched by this
 test and stays in the write-up.
 
-### A5 --- the untrained control, to test the bounded-code confound. 31 August 2026, before it was run.
+### A5: the untrained control, to test the bounded-code confound. 31 August 2026, before it was run.
 
 **What it tests.** A4 confirmed that the `s` and `i` views return opposite
 family verdicts, and named the alternative explanation it could not exclude:
@@ -327,7 +326,7 @@ dynamics do. If that is the whole story, the verdict is a fact about the
 representation's geometry and is already present **before any learning**.
 
 **Design.** The architecture rebuilt at random initialisation, no gradient step
-taken, and the family detector run on it exactly as on the trained models: same
+taken, and the family detector run on it in the same way as on the trained models: same
 environment (`v7`), same seeds (8-15), same estimator, same grids, same A3
 floor.
 
@@ -335,8 +334,8 @@ floor.
 The random-init model is given the **same pre-gradient threshold calibration the
 trainer applies**, because that calibration happens before the first gradient
 step and is part of initialisation rather than of learning. Without it the
-spiking population never fires at all --- the default threshold of 1.0 sits far
-outside an untrained membrane distribution of standard deviation about 0.16 ---
+spiking population never fires at all (the default threshold of 1.0 sits far
+outside an untrained membrane distribution of standard deviation about 0.16),
 and the control would return "nothing fits" by construction, which would look
 like the reassuring answer while being an artefact. A control that cannot fail
 is not a control.
@@ -357,7 +356,7 @@ than a verdict.
   that damages the headline, and it is the one being tested for.
 - **Learned:** the untrained `s` view either fails the floor, or shows no
   majority at >= 6/8. Then geometry alone does not produce the trained verdict
-  and the dynamical reading survives this test --- survives, not proven.
+  and the dynamical reading survives this test. It survives but is not proven.
 - Anything else: report the numbers, claim neither.
 
 **Also recorded, not predicted:** what the `i` and `r` views do at random
