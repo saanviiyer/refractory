@@ -1,0 +1,335 @@
+{
+  "amendment": "A4",
+  "prediction": "on joint 1, view s returns translation >= 6/8 and view i returns rotation >= 6/8, both clearing the A3 floor",
+  "a3_floor": 0.6,
+  "overall": "confirmed",
+  "cells": [
+    {
+      "kind": "snn",
+      "gate_verdict": "PASS",
+      "gate_n_pass": 8,
+      "gate_median_ratio": 0.4749,
+      "analysed_under_allow_partial": false,
+      "n_seeds": 8,
+      "primary": {
+        "verdict": "uninformative",
+        "reason": "fewer than both views clear the A3 floor",
+        "s_residual": 0.697,
+        "i_residual": 0.7571
+      },
+      "secondary": {
+        "P1_s_view_returns_translation": {
+          "joint1": {
+            "majority": "translation",
+            "count": 8,
+            "holds": true
+          },
+          "joint2": {
+            "majority": "translation",
+            "count": 8,
+            "holds": true
+          }
+        },
+        "P2_primary_view_finds_nothing": {
+          "joint1": {
+            "median_win_residual": 0.896,
+            "clears_a3_floor": false,
+            "holds": true
+          },
+          "joint2": {
+            "median_win_residual": 0.9514,
+            "clears_a3_floor": false,
+            "holds": true
+          }
+        }
+      },
+      "other_floor_clearing_disagreements": [],
+      "per_view": {
+        "all_j1": {
+          "n": 8,
+          "n_rotation": 4,
+          "n_translation": 4,
+          "majority": "tied",
+          "majority_count": 4,
+          "median_win_residual": 0.6907,
+          "clears_a3_floor": false,
+          "median_margin": 0.0479
+        },
+        "all_j2": {
+          "n": 8,
+          "n_rotation": 0,
+          "n_translation": 8,
+          "majority": "translation",
+          "majority_count": 8,
+          "median_win_residual": 0.7148,
+          "clears_a3_floor": false,
+          "median_margin": 0.0673
+        },
+        "i_j1": {
+          "n": 8,
+          "n_rotation": 7,
+          "n_translation": 1,
+          "majority": "rotation",
+          "majority_count": 7,
+          "median_win_residual": 0.7571,
+          "clears_a3_floor": false,
+          "median_margin": 0.0585
+        },
+        "i_j2": {
+          "n": 8,
+          "n_rotation": 4,
+          "n_translation": 4,
+          "majority": "tied",
+          "majority_count": 4,
+          "median_win_residual": 0.7851,
+          "clears_a3_floor": false,
+          "median_margin": 0.0678
+        },
+        "r_j1": {
+          "n": 8,
+          "n_rotation": 7,
+          "n_translation": 1,
+          "majority": "rotation",
+          "majority_count": 7,
+          "median_win_residual": 0.896,
+          "clears_a3_floor": false,
+          "median_margin": 0.0676
+        },
+        "r_j2": {
+          "n": 8,
+          "n_rotation": 3,
+          "n_translation": 5,
+          "majority": "translation",
+          "majority_count": 5,
+          "median_win_residual": 0.9514,
+          "clears_a3_floor": false,
+          "median_margin": 0.0153
+        },
+        "s_j1": {
+          "n": 8,
+          "n_rotation": 0,
+          "n_translation": 8,
+          "majority": "translation",
+          "majority_count": 8,
+          "median_win_residual": 0.697,
+          "clears_a3_floor": false,
+          "median_margin": 0.2746
+        },
+        "s_j2": {
+          "n": 8,
+          "n_rotation": 0,
+          "n_translation": 8,
+          "majority": "translation",
+          "majority_count": 8,
+          "median_win_residual": 0.7212,
+          "clears_a3_floor": false,
+          "median_margin": 0.2545
+        },
+        "v_j1": {
+          "n": 8,
+          "n_rotation": 0,
+          "n_translation": 8,
+          "majority": "translation",
+          "majority_count": 8,
+          "median_win_residual": 0.8229,
+          "clears_a3_floor": false,
+          "median_margin": 0.1068
+        },
+        "v_j2": {
+          "n": 8,
+          "n_rotation": 0,
+          "n_translation": 8,
+          "majority": "translation",
+          "majority_count": 8,
+          "median_win_residual": 0.8043,
+          "clears_a3_floor": false,
+          "median_margin": 0.0727
+        }
+      }
+    },
+    {
+      "kind": "rate",
+      "gate_verdict": "PASS",
+      "gate_n_pass": 8,
+      "gate_median_ratio": 0.6669,
+      "analysed_under_allow_partial": false,
+      "n_seeds": 8,
+      "primary": {
+        "verdict": "confirmed",
+        "reason": "opposite majorities at the pre-registered strength",
+        "s_majority": "translation 8/8",
+        "i_majority": "rotation 6/8"
+      },
+      "secondary": {
+        "P1_s_view_returns_translation": {
+          "joint1": {
+            "majority": "translation",
+            "count": 8,
+            "holds": true
+          },
+          "joint2": {
+            "majority": "translation",
+            "count": 8,
+            "holds": true
+          }
+        },
+        "P2_primary_view_finds_nothing": {
+          "joint1": {
+            "median_win_residual": 0.7711,
+            "clears_a3_floor": false,
+            "holds": true
+          },
+          "joint2": {
+            "median_win_residual": 0.7495,
+            "clears_a3_floor": false,
+            "holds": true
+          }
+        }
+      },
+      "other_floor_clearing_disagreements": [
+        {
+          "joint": 1,
+          "views": [
+            "i",
+            "s"
+          ],
+          "is_the_preregistered_pair": true,
+          "i": "rotation 6/8",
+          "s": "translation 8/8"
+        },
+        {
+          "joint": 2,
+          "views": [
+            "i",
+            "v"
+          ],
+          "is_the_preregistered_pair": false,
+          "i": "translation 7/8",
+          "v": "rotation 5/8"
+        },
+        {
+          "joint": 1,
+          "views": [
+            "s",
+            "v"
+          ],
+          "is_the_preregistered_pair": false,
+          "s": "translation 8/8",
+          "v": "rotation 6/8"
+        },
+        {
+          "joint": 2,
+          "views": [
+            "s",
+            "v"
+          ],
+          "is_the_preregistered_pair": false,
+          "s": "translation 8/8",
+          "v": "rotation 5/8"
+        }
+      ],
+      "per_view": {
+        "all_j1": {
+          "n": 8,
+          "n_rotation": 5,
+          "n_translation": 3,
+          "majority": "rotation",
+          "majority_count": 5,
+          "median_win_residual": 0.4839,
+          "clears_a3_floor": true,
+          "median_margin": 0.0801
+        },
+        "all_j2": {
+          "n": 8,
+          "n_rotation": 1,
+          "n_translation": 7,
+          "majority": "translation",
+          "majority_count": 7,
+          "median_win_residual": 0.336,
+          "clears_a3_floor": true,
+          "median_margin": 0.1804
+        },
+        "i_j1": {
+          "n": 8,
+          "n_rotation": 6,
+          "n_translation": 2,
+          "majority": "rotation",
+          "majority_count": 6,
+          "median_win_residual": 0.5898,
+          "clears_a3_floor": true,
+          "median_margin": 0.1558
+        },
+        "i_j2": {
+          "n": 8,
+          "n_rotation": 1,
+          "n_translation": 7,
+          "majority": "translation",
+          "majority_count": 7,
+          "median_win_residual": 0.4757,
+          "clears_a3_floor": true,
+          "median_margin": 0.3254
+        },
+        "r_j1": {
+          "n": 8,
+          "n_rotation": 7,
+          "n_translation": 1,
+          "majority": "rotation",
+          "majority_count": 7,
+          "median_win_residual": 0.7711,
+          "clears_a3_floor": false,
+          "median_margin": 0.0438
+        },
+        "r_j2": {
+          "n": 8,
+          "n_rotation": 2,
+          "n_translation": 6,
+          "majority": "translation",
+          "majority_count": 6,
+          "median_win_residual": 0.7495,
+          "clears_a3_floor": false,
+          "median_margin": 0.0842
+        },
+        "s_j1": {
+          "n": 8,
+          "n_rotation": 0,
+          "n_translation": 8,
+          "majority": "translation",
+          "majority_count": 8,
+          "median_win_residual": 0.2821,
+          "clears_a3_floor": true,
+          "median_margin": 0.1752
+        },
+        "s_j2": {
+          "n": 8,
+          "n_rotation": 0,
+          "n_translation": 8,
+          "majority": "translation",
+          "majority_count": 8,
+          "median_win_residual": 0.1749,
+          "clears_a3_floor": true,
+          "median_margin": 0.379
+        },
+        "v_j1": {
+          "n": 8,
+          "n_rotation": 6,
+          "n_translation": 2,
+          "majority": "rotation",
+          "majority_count": 6,
+          "median_win_residual": 0.596,
+          "clears_a3_floor": true,
+          "median_margin": 0.1582
+        },
+        "v_j2": {
+          "n": 8,
+          "n_rotation": 5,
+          "n_translation": 3,
+          "majority": "rotation",
+          "majority_count": 5,
+          "median_win_residual": 0.4474,
+          "clears_a3_floor": true,
+          "median_margin": 0.1411
+        }
+      }
+    }
+  ]
+}

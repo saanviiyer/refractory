@@ -1,0 +1,48 @@
+{
+  "calibration": "gate reproduces the parent's known verdicts",
+  "n_checked": 4,
+  "n_agreeing": 4,
+  "calibrated": true,
+  "rows": [
+    {
+      "indir": "../used_coordinates/runs/arm_v6",
+      "kind": "gru",
+      "expected": "PASS",
+      "got": "PASS",
+      "n_beating_persistence": 8,
+      "n_models": 8,
+      "median_ratio": 0.6534,
+      "agrees": true
+    },
+    {
+      "indir": "../used_coordinates/runs/arm_v7",
+      "kind": "gru",
+      "expected": "PASS",
+      "got": "PASS",
+      "n_beating_persistence": 8,
+      "n_models": 8,
+      "median_ratio": 0.3006,
+      "agrees": true
+    },
+    {
+      "indir": "../used_coordinates/runs/rssm_v6",
+      "kind": "rssm",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "n_beating_persistence": 0,
+      "n_models": 8,
+      "median_ratio": 2.1223,
+      "agrees": true
+    },
+    {
+      "indir": "../used_coordinates/runs/rssm_v7",
+      "kind": "rssm",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "n_beating_persistence": 0,
+      "n_models": 8,
+      "median_ratio": 1.5776,
+      "agrees": true
+    }
+  ]
+}

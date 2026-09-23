@@ -1,0 +1,94 @@
+{
+  "gate": "blackout_prediction_beats_frame_persistence",
+  "comparator": "frame persistence on blacked-out steps",
+  "domain": "arm",
+  "task": "v7",
+  "indir": "runs/snn_v7",
+  "pattern": "arm_rate_dark_s*.pt",
+  "n_models": 8,
+  "n_beating_persistence": 7,
+  "verdict": "PARTIAL",
+  "median_ratio": 0.5286,
+  "rows": [
+    {
+      "tag": "arm_rate_dark_s0",
+      "model_kind": "rate",
+      "seed": 0,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.003712,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 0.5178,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_rate_dark_s1",
+      "model_kind": "rate",
+      "seed": 1,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.003867,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 0.5394,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_rate_dark_s2",
+      "model_kind": "rate",
+      "seed": 2,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.003499,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 0.488,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_rate_dark_s3",
+      "model_kind": "rate",
+      "seed": 3,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.003652,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 0.5094,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_rate_dark_s4",
+      "model_kind": "rate",
+      "seed": 4,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.004119,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 0.5745,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_rate_dark_s5",
+      "model_kind": "rate",
+      "seed": 5,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.003658,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 0.5103,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_rate_dark_s6",
+      "model_kind": "rate",
+      "seed": 6,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.004858,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 0.6776,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_rate_dark_s7",
+      "model_kind": "rate",
+      "seed": 7,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.008977,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 1.2521,
+      "beats_persistence": false
+    }
+  ]
+}

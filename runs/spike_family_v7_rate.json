@@ -1,0 +1,2121 @@
+{
+  "variant": "v7",
+  "views": [
+    "v",
+    "i",
+    "r",
+    "s",
+    "all"
+  ],
+  "coherent": false,
+  "gate": "runs/gate_rate_v7.json",
+  "gate_verdict": "PARTIAL",
+  "allow_partial": true,
+  "excluded_degenerate": [],
+  "rows": [
+    {
+      "tag": "arm_rate_dark_s0",
+      "model_kind": "rate",
+      "cond": "dark",
+      "seed": 0,
+      "variant": "v7",
+      "coherent": false,
+      "discovery_uses_joint_labels": false,
+      "state_dim": 512,
+      "fits": [
+        {
+          "joint": 1,
+          "view": "v",
+          "translation_score": 2.17565,
+          "response_mean_norm": 0.67592,
+          "response_spread": 0.31067,
+          "rotation": {
+            "gain": 6.64,
+            "residual": 0.4939,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7233,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2294,
+          "response_var_frac": [
+            0.8483,
+            0.0862,
+            0.0255,
+            0.0128
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "v",
+          "translation_score": 2.1598,
+          "response_mean_norm": 0.68267,
+          "response_spread": 0.31608,
+          "rotation": {
+            "gain": 4.135,
+            "residual": 0.8728,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6934,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.1794,
+          "response_var_frac": [
+            0.8666,
+            0.0782,
+            0.0203,
+            0.0104
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "i",
+          "translation_score": 2.61478,
+          "response_mean_norm": 1.11231,
+          "response_spread": 0.42539,
+          "rotation": {
+            "gain": -4.36,
+            "residual": 0.5099,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6918,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.1819,
+          "response_var_frac": [
+            0.9419,
+            0.0246,
+            0.0136,
+            0.006
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "i",
+          "translation_score": 2.74811,
+          "response_mean_norm": 1.10845,
+          "response_spread": 0.40335,
+          "rotation": {
+            "gain": 5.275,
+            "residual": 0.4192,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6688,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2497,
+          "response_var_frac": [
+            0.9457,
+            0.0312,
+            0.0073,
+            0.0053
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "r",
+          "translation_score": 0.65092,
+          "response_mean_norm": 0.10535,
+          "response_spread": 0.16185,
+          "rotation": {
+            "gain": 4.95,
+            "residual": 0.7601,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.8155,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0553,
+          "response_var_frac": [
+            0.3889,
+            0.232,
+            0.1001,
+            0.0726
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "r",
+          "translation_score": 0.64973,
+          "response_mean_norm": 0.10405,
+          "response_spread": 0.16014,
+          "rotation": {
+            "gain": -4.905,
+            "residual": 0.778,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7911,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0131,
+          "response_var_frac": [
+            0.3916,
+            0.2506,
+            0.1131,
+            0.0635
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "s",
+          "translation_score": 0.61921,
+          "response_mean_norm": 0.10463,
+          "response_spread": 0.16897,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.4722,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2554,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.2169,
+          "response_var_frac": [
+            0.3753,
+            0.2255,
+            0.0975,
+            0.0694
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "s",
+          "translation_score": 0.60853,
+          "response_mean_norm": 0.10365,
+          "response_spread": 0.17032,
+          "rotation": {
+            "gain": -8.07,
+            "residual": 0.5375,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2372,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.3003,
+          "response_var_frac": [
+            0.3664,
+            0.2372,
+            0.1122,
+            0.068
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "all",
+          "translation_score": 2.27281,
+          "response_mean_norm": 1.31002,
+          "response_spread": 0.57639,
+          "rotation": {
+            "gain": -1.57,
+            "residual": 0.4713,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.531,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0597,
+          "response_var_frac": [
+            0.891,
+            0.0439,
+            0.0223,
+            0.0124
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "all",
+          "translation_score": 2.32589,
+          "response_mean_norm": 1.31006,
+          "response_spread": 0.56325,
+          "rotation": {
+            "gain": -1.9,
+            "residual": 0.5074,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.4961,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0113,
+          "response_var_frac": [
+            0.8955,
+            0.0514,
+            0.0149,
+            0.0092
+          ]
+        }
+      ],
+      "seconds": 71.3
+    },
+    {
+      "tag": "arm_rate_dark_s1",
+      "model_kind": "rate",
+      "cond": "dark",
+      "seed": 1,
+      "variant": "v7",
+      "coherent": false,
+      "discovery_uses_joint_labels": false,
+      "state_dim": 512,
+      "fits": [
+        {
+          "joint": 1,
+          "view": "v",
+          "translation_score": 2.15637,
+          "response_mean_norm": 0.82333,
+          "response_spread": 0.38181,
+          "rotation": {
+            "gain": -0.89,
+            "residual": 0.994,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7432,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.2508,
+          "response_var_frac": [
+            0.8602,
+            0.0918,
+            0.0172,
+            0.0118
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "v",
+          "translation_score": 2.10072,
+          "response_mean_norm": 0.62845,
+          "response_spread": 0.29916,
+          "rotation": {
+            "gain": 7.275,
+            "residual": 0.6025,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6775,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.075,
+          "response_var_frac": [
+            0.8432,
+            0.0966,
+            0.0246,
+            0.0132
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "i",
+          "translation_score": 2.52381,
+          "response_mean_norm": 1.22944,
+          "response_spread": 0.48714,
+          "rotation": {
+            "gain": 5.645,
+            "residual": 0.4424,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6973,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2549,
+          "response_var_frac": [
+            0.9084,
+            0.065,
+            0.0089,
+            0.0042
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "i",
+          "translation_score": 2.79958,
+          "response_mean_norm": 1.05787,
+          "response_spread": 0.37787,
+          "rotation": {
+            "gain": 5.14,
+            "residual": 0.7533,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6467,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.1066,
+          "response_var_frac": [
+            0.9434,
+            0.0299,
+            0.0096,
+            0.0051
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "r",
+          "translation_score": 0.58126,
+          "response_mean_norm": 0.10457,
+          "response_spread": 0.17991,
+          "rotation": {
+            "gain": 4.52,
+            "residual": 0.7688,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.9299,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.1611,
+          "response_var_frac": [
+            0.3279,
+            0.2489,
+            0.1274,
+            0.0731
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "r",
+          "translation_score": 0.68028,
+          "response_mean_norm": 0.10539,
+          "response_spread": 0.15492,
+          "rotation": {
+            "gain": -4.8,
+            "residual": 0.7773,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7652,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0121,
+          "response_var_frac": [
+            0.4276,
+            0.2409,
+            0.1086,
+            0.0486
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "s",
+          "translation_score": 0.55059,
+          "response_mean_norm": 0.10351,
+          "response_spread": 0.188,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.5502,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2214,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.3288,
+          "response_var_frac": [
+            0.3122,
+            0.2421,
+            0.1232,
+            0.0729
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "s",
+          "translation_score": 0.6416,
+          "response_mean_norm": 0.1042,
+          "response_spread": 0.1624,
+          "rotation": {
+            "gain": -8.07,
+            "residual": 0.5931,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2267,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.3664,
+          "response_var_frac": [
+            0.4115,
+            0.2314,
+            0.1112,
+            0.0472
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "all",
+          "translation_score": 2.21467,
+          "response_mean_norm": 1.48696,
+          "response_spread": 0.67141,
+          "rotation": {
+            "gain": -1.985,
+            "residual": 0.5092,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.555,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0458,
+          "response_var_frac": [
+            0.8708,
+            0.0756,
+            0.0149,
+            0.0107
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "all",
+          "translation_score": 2.33114,
+          "response_mean_norm": 1.23936,
+          "response_spread": 0.53165,
+          "rotation": {
+            "gain": -2.25,
+            "residual": 0.5286,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.4659,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0627,
+          "response_var_frac": [
+            0.892,
+            0.0508,
+            0.0174,
+            0.0098
+          ]
+        }
+      ],
+      "seconds": 70.1
+    },
+    {
+      "tag": "arm_rate_dark_s2",
+      "model_kind": "rate",
+      "cond": "dark",
+      "seed": 2,
+      "variant": "v7",
+      "coherent": false,
+      "discovery_uses_joint_labels": false,
+      "state_dim": 512,
+      "fits": [
+        {
+          "joint": 1,
+          "view": "v",
+          "translation_score": 1.94091,
+          "response_mean_norm": 0.76214,
+          "response_spread": 0.39267,
+          "rotation": {
+            "gain": -5.685,
+            "residual": 0.7032,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7385,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0353,
+          "response_var_frac": [
+            0.8314,
+            0.1028,
+            0.0241,
+            0.0153
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "v",
+          "translation_score": 2.22177,
+          "response_mean_norm": 0.69023,
+          "response_spread": 0.31067,
+          "rotation": {
+            "gain": 5.875,
+            "residual": 0.5995,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6946,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0951,
+          "response_var_frac": [
+            0.8634,
+            0.0695,
+            0.0273,
+            0.0107
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "i",
+          "translation_score": 2.34115,
+          "response_mean_norm": 1.23792,
+          "response_spread": 0.52877,
+          "rotation": {
+            "gain": -4.425,
+            "residual": 0.4855,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7293,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2438,
+          "response_var_frac": [
+            0.9044,
+            0.0607,
+            0.014,
+            0.0062
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "i",
+          "translation_score": 2.78948,
+          "response_mean_norm": 1.13426,
+          "response_spread": 0.40662,
+          "rotation": {
+            "gain": -3.83,
+            "residual": 0.884,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6858,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.1982,
+          "response_var_frac": [
+            0.9521,
+            0.0173,
+            0.0112,
+            0.0045
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "r",
+          "translation_score": 0.61515,
+          "response_mean_norm": 0.11835,
+          "response_spread": 0.19238,
+          "rotation": {
+            "gain": 4.53,
+            "residual": 0.7439,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.8811,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.1372,
+          "response_var_frac": [
+            0.3586,
+            0.2174,
+            0.1254,
+            0.0781
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "r",
+          "translation_score": 0.66751,
+          "response_mean_norm": 0.10537,
+          "response_spread": 0.15785,
+          "rotation": {
+            "gain": 5.38,
+            "residual": 0.7563,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7078,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0485,
+          "response_var_frac": [
+            0.3942,
+            0.2179,
+            0.1068,
+            0.0656
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "s",
+          "translation_score": 0.57703,
+          "response_mean_norm": 0.11682,
+          "response_spread": 0.20245,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.4346,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2877,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.147,
+          "response_var_frac": [
+            0.3418,
+            0.213,
+            0.1182,
+            0.079
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "s",
+          "translation_score": 0.62694,
+          "response_mean_norm": 0.10472,
+          "response_spread": 0.16703,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.5954,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2506,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.3448,
+          "response_var_frac": [
+            0.3744,
+            0.2101,
+            0.1032,
+            0.0648
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "all",
+          "translation_score": 2.04532,
+          "response_mean_norm": 1.4632,
+          "response_spread": 0.71539,
+          "rotation": {
+            "gain": -1.69,
+            "residual": 0.4671,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.5738,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.1067,
+          "response_var_frac": [
+            0.8572,
+            0.075,
+            0.0211,
+            0.0127
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "all",
+          "translation_score": 2.38175,
+          "response_mean_norm": 1.33605,
+          "response_spread": 0.56095,
+          "rotation": {
+            "gain": -1.99,
+            "residual": 0.517,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.5021,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0149,
+          "response_var_frac": [
+            0.9017,
+            0.0371,
+            0.0194,
+            0.0096
+          ]
+        }
+      ],
+      "seconds": 70.2
+    },
+    {
+      "tag": "arm_rate_dark_s3",
+      "model_kind": "rate",
+      "cond": "dark",
+      "seed": 3,
+      "variant": "v7",
+      "coherent": false,
+      "discovery_uses_joint_labels": false,
+      "state_dim": 512,
+      "fits": [
+        {
+          "joint": 1,
+          "view": "v",
+          "translation_score": 2.08177,
+          "response_mean_norm": 0.73085,
+          "response_spread": 0.35107,
+          "rotation": {
+            "gain": -5.66,
+            "residual": 0.7646,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7362,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0284,
+          "response_var_frac": [
+            0.8444,
+            0.0991,
+            0.0235,
+            0.0081
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "v",
+          "translation_score": 2.10134,
+          "response_mean_norm": 0.68155,
+          "response_spread": 0.32434,
+          "rotation": {
+            "gain": -5.395,
+            "residual": 0.7126,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.692,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0207,
+          "response_var_frac": [
+            0.8507,
+            0.0877,
+            0.0235,
+            0.0119
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "i",
+          "translation_score": 2.72816,
+          "response_mean_norm": 1.21944,
+          "response_spread": 0.44698,
+          "rotation": {
+            "gain": -4.93,
+            "residual": 0.6196,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7036,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.084,
+          "response_var_frac": [
+            0.9478,
+            0.0233,
+            0.0115,
+            0.0048
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "i",
+          "translation_score": 2.74907,
+          "response_mean_norm": 1.09629,
+          "response_spread": 0.39879,
+          "rotation": {
+            "gain": -5.775,
+            "residual": 0.4577,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6582,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2005,
+          "response_var_frac": [
+            0.9409,
+            0.032,
+            0.011,
+            0.0043
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "r",
+          "translation_score": 0.63169,
+          "response_mean_norm": 0.1077,
+          "response_spread": 0.1705,
+          "rotation": {
+            "gain": 6.065,
+            "residual": 0.768,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7884,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0205,
+          "response_var_frac": [
+            0.4084,
+            0.202,
+            0.1249,
+            0.0685
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "r",
+          "translation_score": 0.59507,
+          "response_mean_norm": 0.09646,
+          "response_spread": 0.1621,
+          "rotation": {
+            "gain": 5.23,
+            "residual": 0.798,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.8271,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.029,
+          "response_var_frac": [
+            0.3565,
+            0.247,
+            0.1357,
+            0.0669
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "s",
+          "translation_score": 0.6045,
+          "response_mean_norm": 0.10693,
+          "response_spread": 0.17689,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.5482,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2564,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.2918,
+          "response_var_frac": [
+            0.3906,
+            0.1965,
+            0.1233,
+            0.0671
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "s",
+          "translation_score": 0.56724,
+          "response_mean_norm": 0.09629,
+          "response_spread": 0.16975,
+          "rotation": {
+            "gain": -8.07,
+            "residual": 0.4804,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.1628,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.3176,
+          "response_var_frac": [
+            0.3436,
+            0.2353,
+            0.132,
+            0.0642
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "all",
+          "translation_score": 2.30906,
+          "response_mean_norm": 1.42976,
+          "response_spread": 0.6192,
+          "rotation": {
+            "gain": -2.44,
+            "residual": 0.4515,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.5481,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0966,
+          "response_var_frac": [
+            0.8962,
+            0.0475,
+            0.0185,
+            0.0089
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "all",
+          "translation_score": 2.2971,
+          "response_mean_norm": 1.29805,
+          "response_spread": 0.56508,
+          "rotation": {
+            "gain": -2.34,
+            "residual": 0.362,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.4868,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.1248,
+          "response_var_frac": [
+            0.89,
+            0.0509,
+            0.0186,
+            0.0087
+          ]
+        }
+      ],
+      "seconds": 70.8
+    },
+    {
+      "tag": "arm_rate_dark_s4",
+      "model_kind": "rate",
+      "cond": "dark",
+      "seed": 4,
+      "variant": "v7",
+      "coherent": false,
+      "discovery_uses_joint_labels": false,
+      "state_dim": 512,
+      "fits": [
+        {
+          "joint": 1,
+          "view": "v",
+          "translation_score": 1.99267,
+          "response_mean_norm": 0.86156,
+          "response_spread": 0.43237,
+          "rotation": {
+            "gain": -5.72,
+            "residual": 0.757,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7646,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0076,
+          "response_var_frac": [
+            0.8384,
+            0.0926,
+            0.029,
+            0.013
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "v",
+          "translation_score": 2.13695,
+          "response_mean_norm": 0.60549,
+          "response_spread": 0.28334,
+          "rotation": {
+            "gain": -1.6,
+            "residual": 0.9525,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6152,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.3373,
+          "response_var_frac": [
+            0.864,
+            0.0909,
+            0.0152,
+            0.009
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "i",
+          "translation_score": 2.36016,
+          "response_mean_norm": 1.37151,
+          "response_spread": 0.58111,
+          "rotation": {
+            "gain": -3.78,
+            "residual": 0.3993,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7565,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.3572,
+          "response_var_frac": [
+            0.9222,
+            0.0425,
+            0.0151,
+            0.0056
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "i",
+          "translation_score": 2.81741,
+          "response_mean_norm": 0.95363,
+          "response_spread": 0.33848,
+          "rotation": {
+            "gain": 4.805,
+            "residual": 0.58,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.5859,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0058,
+          "response_var_frac": [
+            0.932,
+            0.0454,
+            0.0077,
+            0.0053
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "r",
+          "translation_score": 0.58847,
+          "response_mean_norm": 0.12149,
+          "response_spread": 0.20645,
+          "rotation": {
+            "gain": 5.375,
+            "residual": 0.7406,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.9117,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.1711,
+          "response_var_frac": [
+            0.3367,
+            0.227,
+            0.139,
+            0.0728
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "r",
+          "translation_score": 0.6343,
+          "response_mean_norm": 0.0844,
+          "response_spread": 0.13306,
+          "rotation": {
+            "gain": 2.98,
+            "residual": 0.8072,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 5.205,
+            "residual": 0.9295,
+            "gain_at_grid_edge": false
+          },
+          "family": "rotation",
+          "margin": 0.1223,
+          "response_var_frac": [
+            0.4077,
+            0.2308,
+            0.1243,
+            0.0736
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "s",
+          "translation_score": 0.55362,
+          "response_mean_norm": 0.12048,
+          "response_spread": 0.21762,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.4086,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.3199,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0887,
+          "response_var_frac": [
+            0.3204,
+            0.219,
+            0.1324,
+            0.07
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "s",
+          "translation_score": 0.59548,
+          "response_mean_norm": 0.0846,
+          "response_spread": 0.14206,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.5448,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.1013,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.4435,
+          "response_var_frac": [
+            0.386,
+            0.2295,
+            0.1211,
+            0.0744
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "all",
+          "translation_score": 2.07748,
+          "response_mean_norm": 1.62868,
+          "response_spread": 0.78397,
+          "rotation": {
+            "gain": -1.72,
+            "residual": 0.3631,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6193,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2562,
+          "response_var_frac": [
+            0.8726,
+            0.0605,
+            0.0235,
+            0.011
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "all",
+          "translation_score": 2.35458,
+          "response_mean_norm": 1.13592,
+          "response_spread": 0.48243,
+          "rotation": {
+            "gain": -1.445,
+            "residual": 0.6474,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.3904,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.257,
+          "response_var_frac": [
+            0.889,
+            0.0614,
+            0.0137,
+            0.0101
+          ]
+        }
+      ],
+      "seconds": 70.4
+    },
+    {
+      "tag": "arm_rate_dark_s5",
+      "model_kind": "rate",
+      "cond": "dark",
+      "seed": 5,
+      "variant": "v7",
+      "coherent": false,
+      "discovery_uses_joint_labels": false,
+      "state_dim": 512,
+      "fits": [
+        {
+          "joint": 1,
+          "view": "v",
+          "translation_score": 2.13917,
+          "response_mean_norm": 0.70852,
+          "response_spread": 0.33121,
+          "rotation": {
+            "gain": 7.505,
+            "residual": 0.5147,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7225,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2078,
+          "response_var_frac": [
+            0.8468,
+            0.0882,
+            0.0217,
+            0.0118
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "v",
+          "translation_score": 2.05116,
+          "response_mean_norm": 0.53987,
+          "response_spread": 0.2632,
+          "rotation": {
+            "gain": 7.015,
+            "residual": 0.395,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6555,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2605,
+          "response_var_frac": [
+            0.8277,
+            0.0984,
+            0.0237,
+            0.0117
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "i",
+          "translation_score": 2.63465,
+          "response_mean_norm": 1.22273,
+          "response_spread": 0.4641,
+          "rotation": {
+            "gain": 5.005,
+            "residual": 0.5803,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6997,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.1193,
+          "response_var_frac": [
+            0.9361,
+            0.0376,
+            0.009,
+            0.0042
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "i",
+          "translation_score": 2.81638,
+          "response_mean_norm": 0.98216,
+          "response_spread": 0.34873,
+          "rotation": {
+            "gain": -3.99,
+            "residual": 0.7384,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6272,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.1111,
+          "response_var_frac": [
+            0.9497,
+            0.0216,
+            0.0123,
+            0.0034
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "r",
+          "translation_score": 0.66881,
+          "response_mean_norm": 0.1177,
+          "response_spread": 0.17598,
+          "rotation": {
+            "gain": 4.55,
+            "residual": 0.7734,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7686,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0048,
+          "response_var_frac": [
+            0.3957,
+            0.226,
+            0.1174,
+            0.0703
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "r",
+          "translation_score": 0.75616,
+          "response_mean_norm": 0.10778,
+          "response_spread": 0.14254,
+          "rotation": {
+            "gain": 5.295,
+            "residual": 0.7935,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6995,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.094,
+          "response_var_frac": [
+            0.4711,
+            0.1974,
+            0.0849,
+            0.0478
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "s",
+          "translation_score": 0.63147,
+          "response_mean_norm": 0.11719,
+          "response_spread": 0.18559,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.5519,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.3314,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.2205,
+          "response_var_frac": [
+            0.3755,
+            0.2185,
+            0.1147,
+            0.0709
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "s",
+          "translation_score": 0.69691,
+          "response_mean_norm": 0.10678,
+          "response_spread": 0.15321,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.4937,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2941,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.1997,
+          "response_var_frac": [
+            0.4351,
+            0.1934,
+            0.085,
+            0.0491
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "all",
+          "translation_score": 2.27702,
+          "response_mean_norm": 1.42291,
+          "response_spread": 0.6249,
+          "rotation": {
+            "gain": -1.795,
+            "residual": 0.5119,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.5397,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0278,
+          "response_var_frac": [
+            0.8866,
+            0.0557,
+            0.0163,
+            0.0094
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "all",
+          "translation_score": 2.33463,
+          "response_mean_norm": 1.13098,
+          "response_spread": 0.48444,
+          "rotation": {
+            "gain": -1.94,
+            "residual": 0.4304,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.4323,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0019,
+          "response_var_frac": [
+            0.8911,
+            0.0434,
+            0.0208,
+            0.0099
+          ]
+        }
+      ],
+      "seconds": 71.4
+    },
+    {
+      "tag": "arm_rate_dark_s6",
+      "model_kind": "rate",
+      "cond": "dark",
+      "seed": 6,
+      "variant": "v7",
+      "coherent": false,
+      "discovery_uses_joint_labels": false,
+      "state_dim": 512,
+      "fits": [
+        {
+          "joint": 1,
+          "view": "v",
+          "translation_score": 2.09236,
+          "response_mean_norm": 0.60355,
+          "response_spread": 0.28846,
+          "rotation": {
+            "gain": -6.725,
+            "residual": 0.4617,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6918,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2302,
+          "response_var_frac": [
+            0.8494,
+            0.0848,
+            0.0282,
+            0.0094
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "v",
+          "translation_score": 2.05465,
+          "response_mean_norm": 0.37532,
+          "response_spread": 0.18267,
+          "rotation": {
+            "gain": 7.78,
+            "residual": 0.3772,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.5497,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.1725,
+          "response_var_frac": [
+            0.821,
+            0.1137,
+            0.0183,
+            0.0148
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "i",
+          "translation_score": 2.74861,
+          "response_mean_norm": 1.05482,
+          "response_spread": 0.38377,
+          "rotation": {
+            "gain": -4.395,
+            "residual": 0.7275,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6512,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0763,
+          "response_var_frac": [
+            0.9426,
+            0.0257,
+            0.0124,
+            0.0064
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "i",
+          "translation_score": 2.74151,
+          "response_mean_norm": 0.71072,
+          "response_spread": 0.25924,
+          "rotation": {
+            "gain": 0.12,
+            "residual": 0.9996,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.4641,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.5355,
+          "response_var_frac": [
+            0.9501,
+            0.0202,
+            0.0166,
+            0.0032
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "r",
+          "translation_score": 0.65085,
+          "response_mean_norm": 0.09913,
+          "response_spread": 0.15231,
+          "rotation": {
+            "gain": 5.25,
+            "residual": 0.7541,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7337,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.0204,
+          "response_var_frac": [
+            0.4,
+            0.2218,
+            0.1064,
+            0.0582
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "r",
+          "translation_score": 0.77607,
+          "response_mean_norm": 0.07876,
+          "response_spread": 0.10149,
+          "rotation": {
+            "gain": -2.91,
+            "residual": 0.8918,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 6.08,
+            "residual": 0.7477,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.1441,
+          "response_var_frac": [
+            0.5726,
+            0.2001,
+            0.055,
+            0.0273
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "s",
+          "translation_score": 0.61474,
+          "response_mean_norm": 0.09947,
+          "response_spread": 0.16181,
+          "rotation": {
+            "gain": 8.07,
+            "residual": 0.513,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2781,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.2349,
+          "response_var_frac": [
+            0.382,
+            0.2113,
+            0.1011,
+            0.06
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "s",
+          "translation_score": 0.733,
+          "response_mean_norm": 0.07973,
+          "response_spread": 0.10877,
+          "rotation": {
+            "gain": -8.07,
+            "residual": 0.6639,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.1719,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.492,
+          "response_var_frac": [
+            0.549,
+            0.2026,
+            0.0601,
+            0.0259
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "all",
+          "translation_score": 2.31253,
+          "response_mean_norm": 1.22337,
+          "response_spread": 0.52902,
+          "rotation": {
+            "gain": -2.195,
+            "residual": 0.4699,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.4809,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.011,
+          "response_var_frac": [
+            0.8863,
+            0.05,
+            0.0209,
+            0.0108
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "all",
+          "translation_score": 2.31665,
+          "response_mean_norm": 0.81151,
+          "response_spread": 0.35029,
+          "rotation": {
+            "gain": -1.77,
+            "residual": 0.5278,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2609,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.2669,
+          "response_var_frac": [
+            0.8931,
+            0.0385,
+            0.0282,
+            0.0107
+          ]
+        }
+      ],
+      "seconds": 73.0
+    },
+    {
+      "tag": "arm_rate_dark_s7",
+      "model_kind": "rate",
+      "cond": "dark",
+      "seed": 7,
+      "variant": "v7",
+      "coherent": false,
+      "discovery_uses_joint_labels": false,
+      "state_dim": 512,
+      "fits": [
+        {
+          "joint": 1,
+          "view": "v",
+          "translation_score": 2.16949,
+          "response_mean_norm": 0.72844,
+          "response_spread": 0.33577,
+          "rotation": {
+            "gain": 5.645,
+            "residual": 0.8504,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.7132,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.1371,
+          "response_var_frac": [
+            0.8567,
+            0.0907,
+            0.0248,
+            0.0121
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "v",
+          "translation_score": 1.81463,
+          "response_mean_norm": 0.17264,
+          "response_spread": 0.09514,
+          "rotation": {
+            "gain": 4.46,
+            "residual": 0.9166,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.2595,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.6571,
+          "response_var_frac": [
+            0.8007,
+            0.1296,
+            0.0249,
+            0.0209
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "i",
+          "translation_score": 2.66546,
+          "response_mean_norm": 1.17904,
+          "response_spread": 0.44234,
+          "rotation": {
+            "gain": -5.22,
+            "residual": 0.4716,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.6824,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.2108,
+          "response_var_frac": [
+            0.9355,
+            0.0402,
+            0.0101,
+            0.0046
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "i",
+          "translation_score": 4.18821,
+          "response_mean_norm": 0.35721,
+          "response_spread": 0.08529,
+          "rotation": {
+            "gain": -0.235,
+            "residual": 0.9976,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.3666,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.631,
+          "response_var_frac": [
+            0.9648,
+            0.0144,
+            0.007,
+            0.0047
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "r",
+          "translation_score": 0.58027,
+          "response_mean_norm": 0.09229,
+          "response_spread": 0.15904,
+          "rotation": {
+            "gain": -4.435,
+            "residual": 0.7644,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 7.085,
+            "residual": 0.9257,
+            "gain_at_grid_edge": false
+          },
+          "family": "rotation",
+          "margin": 0.1613,
+          "response_var_frac": [
+            0.3485,
+            0.2589,
+            0.1328,
+            0.0835
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "r",
+          "translation_score": 1.45087,
+          "response_mean_norm": 0.06692,
+          "response_spread": 0.04612,
+          "rotation": {
+            "gain": 0.24,
+            "residual": 0.9998,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 2.43,
+            "residual": 0.5866,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.4132,
+          "response_var_frac": [
+            0.825,
+            0.075,
+            0.0374,
+            0.0236
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "s",
+          "translation_score": 0.55123,
+          "response_mean_norm": 0.09129,
+          "response_spread": 0.16562,
+          "rotation": {
+            "gain": -8.07,
+            "residual": 0.5601,
+            "gain_at_grid_edge": true
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.1585,
+            "gain_at_grid_edge": true
+          },
+          "family": "translation",
+          "margin": 0.4016,
+          "response_var_frac": [
+            0.3309,
+            0.2536,
+            0.1284,
+            0.0832
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "s",
+          "translation_score": 1.29657,
+          "response_mean_norm": 0.06523,
+          "response_spread": 0.05031,
+          "rotation": {
+            "gain": -4.285,
+            "residual": 0.9851,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 2.79,
+            "residual": 0.9728,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.0123,
+          "response_var_frac": [
+            0.7941,
+            0.094,
+            0.0426,
+            0.0278
+          ]
+        },
+        {
+          "joint": 1,
+          "view": "all",
+          "translation_score": 2.31635,
+          "response_mean_norm": 1.39198,
+          "response_spread": 0.60094,
+          "rotation": {
+            "gain": -1.83,
+            "residual": 0.5258,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 8.07,
+            "residual": 0.5261,
+            "gain_at_grid_edge": true
+          },
+          "family": "rotation",
+          "margin": 0.0004,
+          "response_var_frac": [
+            0.8923,
+            0.0566,
+            0.0173,
+            0.0107
+          ]
+        },
+        {
+          "joint": 2,
+          "view": "all",
+          "translation_score": 2.81377,
+          "response_mean_norm": 0.4076,
+          "response_spread": 0.14486,
+          "rotation": {
+            "gain": -0.695,
+            "residual": 0.9682,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 7.68,
+            "residual": 0.1822,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.786,
+          "response_var_frac": [
+            0.9045,
+            0.039,
+            0.0191,
+            0.0086
+          ]
+        }
+      ],
+      "seconds": 75.9
+    }
+  ]
+}

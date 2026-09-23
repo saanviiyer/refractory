@@ -1,0 +1,204 @@
+{
+  "kind": "arm_rate",
+  "cond": "dark",
+  "seed": 3,
+  "steps": 1600,
+  "lr": 0.002,
+  "batch": 32,
+  "T": 64,
+  "params": 496480,
+  "variant": "v7",
+  "neurons": 128,
+  "surrogate_width": 4.0,
+  "discrete_emission": false,
+  "threshold_calibration": {
+    "quantile": 0.9,
+    "threshold_p10": -0.2599,
+    "threshold_p50": 0.04636,
+    "threshold_p90": 0.32689,
+    "n_degenerate_neurons": 0
+  },
+  "history": [
+    {
+      "step": 160,
+      "mse": 0.0196688212454319,
+      "margins": {
+        "abs_margin_p10": 0.24813,
+        "abs_margin_p50": 2.22135,
+        "abs_margin_p90": 6.42224,
+        "abs_margin_p99": 9.70977,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.577,
+        "frac_emission_graded": 0.32007,
+        "frac_neurons_never_fire": 0.14844,
+        "frac_neurons_always_fire": 0.39844,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    },
+    {
+      "step": 320,
+      "mse": 0.010606092400848866,
+      "margins": {
+        "abs_margin_p10": 0.32297,
+        "abs_margin_p50": 2.22296,
+        "abs_margin_p90": 7.71994,
+        "abs_margin_p99": 13.10855,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.51862,
+        "frac_emission_graded": 0.25967,
+        "frac_neurons_never_fire": 0.05469,
+        "frac_neurons_always_fire": 0.20312,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    },
+    {
+      "step": 480,
+      "mse": 0.007239902392029762,
+      "margins": {
+        "abs_margin_p10": 0.33547,
+        "abs_margin_p50": 1.91271,
+        "abs_margin_p90": 8.42943,
+        "abs_margin_p99": 15.25737,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.5013,
+        "frac_emission_graded": 0.27562,
+        "frac_neurons_never_fire": 0.03906,
+        "frac_neurons_always_fire": 0.14844,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    },
+    {
+      "step": 640,
+      "mse": 0.00620835367590189,
+      "margins": {
+        "abs_margin_p10": 0.31337,
+        "abs_margin_p50": 1.67115,
+        "abs_margin_p90": 8.49727,
+        "abs_margin_p99": 16.12506,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.51065,
+        "frac_emission_graded": 0.29961,
+        "frac_neurons_never_fire": 0.01562,
+        "frac_neurons_always_fire": 0.13281,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    },
+    {
+      "step": 800,
+      "mse": 0.005063698161393404,
+      "margins": {
+        "abs_margin_p10": 0.29731,
+        "abs_margin_p50": 1.5639,
+        "abs_margin_p90": 7.75072,
+        "abs_margin_p99": 15.11705,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.51234,
+        "frac_emission_graded": 0.31725,
+        "frac_neurons_never_fire": 0.01562,
+        "frac_neurons_always_fire": 0.125,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    },
+    {
+      "step": 960,
+      "mse": 0.004338499158620834,
+      "margins": {
+        "abs_margin_p10": 0.29541,
+        "abs_margin_p50": 1.55167,
+        "abs_margin_p90": 7.69895,
+        "abs_margin_p99": 15.1506,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.51237,
+        "frac_emission_graded": 0.32103,
+        "frac_neurons_never_fire": 0.01562,
+        "frac_neurons_always_fire": 0.11719,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    },
+    {
+      "step": 1120,
+      "mse": 0.004079144913703203,
+      "margins": {
+        "abs_margin_p10": 0.29019,
+        "abs_margin_p50": 1.54274,
+        "abs_margin_p90": 7.71829,
+        "abs_margin_p99": 15.17925,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.51476,
+        "frac_emission_graded": 0.32414,
+        "frac_neurons_never_fire": 0.00781,
+        "frac_neurons_always_fire": 0.125,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    },
+    {
+      "step": 1280,
+      "mse": 0.0039009633474051952,
+      "margins": {
+        "abs_margin_p10": 0.29131,
+        "abs_margin_p50": 1.54469,
+        "abs_margin_p90": 7.80611,
+        "abs_margin_p99": 15.27434,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.51485,
+        "frac_emission_graded": 0.32361,
+        "frac_neurons_never_fire": 0.00781,
+        "frac_neurons_always_fire": 0.11719,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    },
+    {
+      "step": 1440,
+      "mse": 0.0039369710721075535,
+      "margins": {
+        "abs_margin_p10": 0.29125,
+        "abs_margin_p50": 1.54119,
+        "abs_margin_p90": 7.7491,
+        "abs_margin_p99": 15.17017,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.51555,
+        "frac_emission_graded": 0.32436,
+        "frac_neurons_never_fire": 0.00781,
+        "frac_neurons_always_fire": 0.11719,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    },
+    {
+      "step": 1600,
+      "mse": 0.003871508175507188,
+      "margins": {
+        "abs_margin_p10": 0.29075,
+        "abs_margin_p50": 1.54171,
+        "abs_margin_p90": 7.74564,
+        "abs_margin_p99": 15.17171,
+        "surrogate_width": 4.0,
+        "surrogate_1pct_margin": 2.25,
+        "mean_firing_rate": 0.51569,
+        "frac_emission_graded": 0.32431,
+        "frac_neurons_never_fire": 0.00781,
+        "frac_neurons_always_fire": 0.11719,
+        "note": "diagnostic only; the gate is gate_blackout.py"
+      }
+    }
+  ],
+  "eval_lit": {
+    "lit_mse": 0.003698364831507206,
+    "dark_mse": null,
+    "weighted_mse": 0.003930235281586647
+  },
+  "eval_dark": {
+    "lit_mse": 0.0038434630259871483,
+    "dark_mse": 0.003658795729279518,
+    "weighted_mse": 0.0038908508140593767
+  },
+  "wall_s": 732.7
+}
